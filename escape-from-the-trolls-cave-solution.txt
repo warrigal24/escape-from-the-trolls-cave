@@ -1,0 +1,46 @@
+Escape from the Troll's Cave
+By John H Doolittle & Garry Francis
+For Z-code interpreters
+
+Solution by Garry Francis
+----------------------------------------
+This is a minimal solution. You'll need to EXAMINE lots of things for this solution to make sense. Some optional (but significant) commands are shown in parentheses. These can be omitted once you know what to do.
+
+Scores are shown in parentheses as +A=B, where A is points earned and B is cumulative points earned.
+
+(X SIGN) (perhaps you should read it)
+(READ SIGN) (pay troll 41 cents to exit)
+(ASK TROLL ABOUT BUILDING, CARNIVAL, CAVE, COINS, CONDITIONS, DIME, EXIT, HIMSELF, ME, NICKEL, PENNY, QUARTER, SCHOOL, SIGN, TOLL or any synonyms)
+S
+(OPEN DOOR) (it's locked)
+(UNLOCK IT) (you don't have the key)
+W
+GET BROOM
+E
+S
+GET QUARTER (+10=10)
+(X IT) (it's worth 25 cents)
+W
+SWEEP DUST WITH BROOM (you find a key)
+GET KEY
+(X IT) (it's a heavy iron key that opens a heavy iron door)
+E
+S
+GET DIME (+10=20)
+(X IT) (it's worth 10 cents)
+N
+E
+GET NICKEL (+10=30)
+(X IT) (it's worth 5 cents)
+W
+N
+UNLOCK DOOR WITH KEY
+OPEN IT
+E
+GET PENNY (+10=40)
+(X IT) (it's worth 1 cent)
+W
+N
+GIVE COINS TO TROLL (you give quarter, dime, nickel & penny to troll) (+60=100)
+N
+***THE END***

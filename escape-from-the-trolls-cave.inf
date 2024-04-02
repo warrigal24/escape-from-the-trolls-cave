@@ -1,0 +1,1144 @@
+!% -~S
+!% $OMIT_UNUSED_ROUTINES=1
+!% $OMIT_SYMBOL_TABLE=1
+!% $ZCODE_LESS_DICT_DATA=1
+!% $MAX_ABBREVS=96
+!========================================
+! Escape from the Troll's Cave
+! Copyright © 2024 Garry Francis
+!========================================
+!Constant DEBUG;
+
+Abbreviate " cents.~ He's pretty good when it comes to money.";!     3x, saved   102
+Abbreviate "https://drdooriddle.itch.io/";  !     2x, saved    28
+Abbreviate "It's a silver coin worth ";     !     3x, saved    48
+Abbreviate "administration build";          !     5x, saved    69
+Abbreviate " John H Doolittle";             !     4x, saved    51
+Abbreviate "you'd better g";                !     2x, saved    11
+Abbreviate "n't understand";                !     4x, saved    37
+Abbreviate " Garry Franci";                 !     3x, saved    24
+Abbreviate "Troll's Cave";                  !     4x, saved    37
+Abbreviate "s probably w";                  !     3x, saved    18
+Abbreviate "unexpected.";                   !     4x, saved    28
+Abbreviate "description";                   !     6x, saved    42
+Abbreviate "You can't ";                    !    18x, saved   168
+Abbreviate "direction";                     !    10x, saved    61
+Abbreviate "ranscript";                     !     6x, saved    33
+Abbreviate " the exit";                     !    10x, saved    61
+Abbreviate " the toll";                     !    11x, saved    68
+Abbreviate "nothing ";                      !    20x, saved   111
+Abbreviate "yourself";                      !     7x, saved    33
+Abbreviate " you've ";                      !     9x, saved    54
+Abbreviate " out of ";                      !    10x, saved    51
+Abbreviate "carnival";                      !     8x, saved    39
+Abbreviate " already";                      !    13x, saved    69
+Abbreviate "need to ";                      !     9x, saved    45
+Abbreviate " to the ";                      !    23x, saved   129
+Abbreviate "You're ";                       !    15x, saved    96
+Abbreviate " around";                       !     7x, saved    26
+Abbreviate " school";                       !     8x, saved    31
+Abbreviate "orridor";                       !     9x, saved    36
+Abbreviate "ou can ";                       !    14x, saved    61
+Abbreviate "Inform ";                       !     6x, saved    27
+Abbreviate "ommand";                        !    11x, saved    38
+Abbreviate " your ";                        !    14x, saved    50
+Abbreviate " close";                        !    15x, saved    54
+Abbreviate "troll";                         !    27x, saved    75
+Abbreviate " and ";                         !    45x, saved   129
+Abbreviate " not ";                         !    17x, saved    45
+Abbreviate " that";                         !    40x, saved   114
+Abbreviate "thing";                         !    33x, saved    93
+Abbreviate " you ";                         !    53x, saved   153
+Abbreviate " cent";                         !    14x, saved    36
+Abbreviate " the ";                         !    99x, saved   291
+Abbreviate " what";                         !    10x, saved    24
+Abbreviate "ould ";                         !    11x, saved    27
+Abbreviate "There";                         !    14x, saved    50
+Abbreviate "witch";                         !    10x, saved    24
+Abbreviate "vault";                         !    10x, saved    24
+Abbreviate "which";                         !     9x, saved    21
+Abbreviate " have";                         !    15x, saved    39
+Abbreviate " with";                         !    11x, saved    27
+Abbreviate "bject";                         !    10x, saved    24
+Abbreviate " from";                         !    12x, saved    30
+Abbreviate "n't ";                          !    34x, saved    96
+Abbreviate "some";                          !    15x, saved    24
+Abbreviate "The ";                          !    26x, saved    72
+Abbreviate "You ";                          !    62x, saved   180
+Abbreviate "room";                          !    18x, saved    30
+Abbreviate "tion";                          !    23x, saved    40
+Abbreviate "his ";                          !    23x, saved    40
+Abbreviate "here";                          !    32x, saved    58
+Abbreviate " you";                          !    19x, saved    32
+Abbreviate "ing ";                          !    54x, saved   102
+Abbreviate "_to/";                          !    12x, saved    42
+Abbreviate "dust";                          !    15x, saved    24
+Abbreviate ".^* ";                          !    10x, saved    61
+Abbreviate " is ";                          !    25x, saved    44
+Abbreviate "You'";                          !    13x, saved    46
+Abbreviate "Use ";                          !    10x, saved    24
+Abbreviate " to ";                          !    82x, saved   158
+Abbreviate "That";                          !    14x, saved    36
+Abbreviate "orth";                          !    15x, saved    24
+Abbreviate "ver";                           !    23x, saved    20
+Abbreviate "'s ";                           !    41x, saved    76
+Abbreviate "one";                           !    24x, saved    21
+Abbreviate "or ";                           !    24x, saved    21
+Abbreviate "ed.";                           !    13x, saved    20
+Abbreviate "ide";                           !    24x, saved    21
+Abbreviate " it";                           !    27x, saved    24
+Abbreviate ".^^";                           !    17x, saved    62
+Abbreviate ". I";                           !    19x, saved    51
+Abbreviate " be";                           !    21x, saved    18
+Abbreviate "the";                           !    41x, saved    38
+Abbreviate " a ";                           !    38x, saved    35
+Abbreviate "ame";                           !    30x, saved    27
+Abbreviate "out";                           !    29x, saved    26
+Abbreviate " co";                           !    28x, saved    25
+Abbreviate "ing";                           !    47x, saved    44
+Abbreviate " in";                           !    49x, saved    46
+Abbreviate " of";                           !    33x, saved    30
+Abbreviate "ent";                           !    36x, saved    33
+Abbreviate "ave";                           !    32x, saved    29
+Abbreviate "re ";                           !    34x, saved    31
+Abbreviate ", ";                            !    93x, saved    90
+Abbreviate ". ";                            !    63x, saved    60
+Abbreviate ".^";                            !    10x, saved    14
+Abbreviate ".~";                            !    22x, saved    38
+
+Constant Story "Escape from the Troll's Cave";
+#Ifv5;
+Zcharacter table + '@{A9}'; !Add copyright symbol
+Constant Headline "^Copyright @{A9} 2024 Garry Francis^Based on 'Cave of the Troll' by John H Doolittle^https://drdooriddle.itch.io/^Type ABOUT for further info and credits.^^";
+#Ifnot;
+Constant Headline "^Copyright (c) 2024 Garry Francis^Based on 'Cave of the Troll' by John H Doolittle^https://drdooriddle.itch.io/^Type ABOUT for further info and credits.^^";
+#Endif;
+
+Array UUID_ARRAY string "UUID://cae6308f-fdf7-4c47-9c8f-7bd24cf54f15//";
+#Ifdef UUID_ARRAY;
+#Endif;
+
+Release 1;
+Serial "240319";
+
+!Inform 6 constants
+Constant AMUSING_PROVIDED;
+Constant DEATH_MENTION_UNDO;
+Constant MAX_CARRIED = 10;
+Constant MAX_SCORE = 100;
+Constant OBJECT_SCORE = 10;
+
+!PunyInform constants
+Constant CUSTOM_ABBREVIATIONS;
+Constant OPTIONAL_EXTENDED_METAVERBS;
+Constant OPTIONAL_EXTENDED_VERBSET;
+Constant OPTIONAL_FULL_DIRECTIONS;
+#Ifv5;
+Constant OPTIONAL_PROVIDE_UNDO;
+#Endif;
+Constant OPTIONAL_SCORED;
+Constant RUNTIME_ERRORS 0;!0 for release, 2 for debug
+
+!PunyInform static messages
+Constant MSG_PARSER_NO_INPUT "You need to enter a command.";
+Constant MSG_PARSER_UNKNOWN_VERB "That's not a verb I recognise.";
+Constant MSG_SORRY_DEFAULT "Oh, don't apologise.";
+
+!PunyInform dynamic messages
+Constant MSG_CLOSE_NOT_OPEN 1000;
+Constant MSG_LOCK_ALREADY_LOCKED 1001;
+Constant MSG_LOCK_CLOSE_FIRST 1002;
+Constant MSG_LOCK_KEY_DOESNT_FIT 1003;
+Constant MSG_UNLOCK_ALREADY_UNLOCKED 1004;
+Constant MSG_UNLOCK_KEY_DOESNT_FIT 1005;
+
+!Game-specific constants
+Constant GAY_OR_SOMETHING "Are you gay or something?";
+Constant HINT_GET_COIN "That coin isn't going to pick itself up.";
+
+!Game-specific variables
+
+!Replaced actions
+Replace GoSub;
+Replace LockSub;
+Replace UnlockSub;
+
+Include "globals.h";
+
+!========================================
+! Entry point routines
+!========================================
+[ Amusing;
+  "^Have you tried:^* Examining yourself.^* Examining everything in every room, including scenery and the rooms themselves.^* Using the magic word XYZZY at the exit and elsewhere.^* Trying to leave without paying the full toll.^* Asking the troll about BUILDING, CARNIVAL, CAVE, COINS, CONDITIONS, DIME, EXIT, HIMSELF, ME, NICKEL, PENNY, QUARTER, SCHOOL, SIGN, TOLL and synonyms before and after paying the toll.^* Attacking or kissing the troll.^* Hitting the vault door.^* Coming out of the closets.^* Riding the broom.^* Getting the dust.^* Doing things a second time.";
+];
+
+[ LibraryMessages p_msg p_arg_1 p_arg_2;
+  switch (p_msg)
+  {
+    MSG_CLOSE_NOT_OPEN:
+      print_ret (CTheyreOrIts)noun, " already closed.";
+    MSG_LOCK_ALREADY_LOCKED:
+      print_ret (CTheyreOrIts)noun, " already locked.";
+    MSG_LOCK_CLOSE_FIRST:
+      "You'll have to close ", (ItOrThem)noun, " first.";
+    MSG_LOCK_KEY_DOESNT_FIT:
+      print_ret (The)second, " ", (DoesntOrDont)second, " fit the lock.";
+    MSG_UNLOCK_ALREADY_UNLOCKED:
+      print_ret (CTheyreOrIts)noun, " already unlocked.";
+    MSG_UNLOCK_KEY_DOESNT_FIT:
+      print_ret (The)second, " ", (DoesntOrDont)second, " fit the lock.";
+  }
+  p_arg_1 = p_arg_2;
+];
+
+Include "puny.h";
+
+!========================================
+! Initialisation
+!========================================
+[ Initialise;
+  location = room01;
+  lookmode = 2;
+  no_implicit_actions = true;
+  player.description = "You're a grubby-looking school student who should be in school, rather than wandering around the carnival.";
+  "Woe is you! You've wagged school and spent all day at the carnival and you've run out of money. You were wandering around a quiet area behind all the main rides when you came across a sign over an entrance that said 'Administration'. The sign had been crossed out and replaced with 'Troll's Cave - Admission Free'. What a great gimmick! You couldn't resist the temptation of a free ride, so you were lured inside.^^Big mistake.^^Little did you know that this really was an administration area and not a ride at all. There's a troll at the exit that won't let you leave until you pay his toll, but you haven't got a cent to your name because you spent it all on fairy floss and the other rides. You need to find some money and pay the troll to return to your dull (but safe) existence outside the carnival.^^Luckily for you, trolls have no pockets, so they tend to drop coins everywhere. If you look around carefully, there's a good chance that you may be able to find the money you need to pay the troll and get out of here.^";
+];
+
+!========================================
+! Room 1: Inside Troll's Cave
+!========================================
+Object room01 "Inside Troll's Cave"
+with
+  description "You're just inside the troll's cave, which is really an administration building. It appears that the troll has taken over the building for his own nefarious purposes. You can go deeper into the building to the south, but your goal is the exit to the north.",
+  s_to room02,
+  n_to
+  [;
+    if (troll.number == 41)
+    {
+      deadflag = 2;
+      "The troll smiles and lets you pass.^^Congratulations. You've escaped from the troll's cave. Now, you'd better get out of here. You've had enough of this carnival for one day.";
+    }
+    print "The troll bars your way. ~It costs 41 cents to exit. You still owe me ", 41 - troll.number, " cent";
+    if (troll.number < 40)
+      print "s";
+    ".~";
+  ],
+  before
+  [;
+    Hint:
+      if (troll.number == 41)
+        "You've paid the troll, so there's nothing stopping you from leaving.";
+      if (sign hasnt general)
+        "Read the sign.";
+      if (quarter in player || dime in player || nickel in player || penny in player)
+        "Try giving your coins to the troll.";
+      "Try asking the troll about various things.";
+  ],
+has light;
+
+!----------------------------------------
+! Administration building (floating object)
+!----------------------------------------
+Object "administration building"
+with
+  name 'admin' 'administration' 'building',
+  description "This is (or was) the administration building for the carnival. It's obviously been taken over by the troll, but you don't know whether this is a permanent arrangement or whether the troll is just taking advantage of it temporarily while the staff are occupied on the rides elsewhere in the carnival.",
+  found_in
+  [;
+    rtrue;
+  ],
+has scenery;
+
+!----------------------------------------
+! Exit
+!----------------------------------------
+Object "exit" room01
+with
+  article "an",
+  parse_name
+  [ i;
+    while (NextWord() == 'entry' or 'entryway' or 'exit' or 'troll^s' or 'cave')
+      i++;
+    return i;
+  ],
+  description "When you're coming in, this is the entry. When you're going out, this is the exit. As you've already come in, you guess it must now be the exit. This is approporiate, as you desperately want to leave.",
+has scenery;
+
+!----------------------------------------
+! Sign
+!----------------------------------------
+Object sign "sign" room01
+with
+  name 'sign',
+  description
+  [;
+    print "It's a large enamel sign mounted on the wall beside the exit.";
+    if (self hasnt general)
+      print " It wouldn't hurt to read it.";
+    "";
+  ],
+  before
+  [;
+    Read:
+      give self general;
+      "It says, 'Exit costs 41 cents. Give coins to troll.'";
+    Take:
+      "It's bolted to the wall.";
+  ],
+has static;
+
+!----------------------------------------
+! Troll
+!----------------------------------------
+Object troll "troll" room01
+with
+  name 'troll',
+  description "Oh, my god, he's ugly. When he smiles, he exposes a mouthful of distorted yellow teeth. He really needs to pay a trip to the dentist.",
+  life
+  [;
+    Ask:
+      switch (second)
+      {
+        'admin', 'administration', 'building':
+          "~You're standing in it, but it's my cave now.~";
+        'carnival', 'ride', 'rides':
+          print "~The carnival rides are outside. ";
+          if (self.number == 41)
+            "You've paid the toll, so there's nothing stopping you from seeing them.~";
+          else
+            "If you pay the toll, you can go and see them.~";
+        'cave', 'troll^s':
+          "~This is my domain. You came here uninvited, so you must pay the toll to leave.~";
+        'coin', 'coins//p', 'money', 'credit', 'card', 'cards':
+          "~I only accept cash. No credit cards.~";
+        'condition', 'conditions', 'term', 'terms':
+          "~The terms and conditions are pretty simple. You pay the toll. I let you go.~";
+        'dime':
+          "~A dime is worth ten cents.~ He's pretty good when it comes to money.";
+        'exit':
+          print "He points to the north. ~The exit's that way. You're free to leave ";
+          if (self.number == 41)
+            print "now that";
+          else
+            print "when";
+          " you've paid the toll.~";
+        'guardian', 'him', 'himself', 'troll':
+          print "~I'm the guardian of the cave. ";
+          if (self.number == 41)
+            "You've paid me the toll, so you can leave.~";
+          else
+            "You pay me the toll and you can leave.~";
+        'fee', 'toll':
+          "~The toll is 41 cents. No exceptions...and no student discounts.~";
+        'me', 'myself', 'self', 'student':
+          "~You look like a school student. Why aren't you in school so that you can get an honest job, like me?~ Ha! That's a joke. Extorting school students of their pocket money isn't exactly an honest job.";
+        'nickel':
+          "~A nickel is worth five cents.~ He's pretty good when it comes to money.";
+        'penny':
+          "~A penny is worth one cent.~ He's pretty good when it comes to money.";
+        'quarter':
+          "~A quarter is worth 25 cents.~ He's pretty good when it comes to money.";
+        'school':
+          "~Why aren't you in school? Did you get kicked out of class or something?~";
+        'sign':
+          "He points to the sign. ~Read it. Or don't they teach you how to read at your school?~";
+        default:
+          print "~I don't have time to stand around answering all your dumb questions. ";
+          if (self.number == 41)
+            "You've paid the toll, so get out of here before I change my mind.~";
+          else
+            "Just pay the toll and you're free to go.~";
+      }
+    Attack:
+      "Do you have a death wish? That troll looks mean!";
+    Give:
+      if (noun has scored)
+      {
+        score = score + 15;
+        self.number = self.number + noun.number;
+        move noun to self;
+        print "~Thank you. That's a total of ", self.number, " cent";
+        if (self.number > 1)
+          print "s";
+        print ". You ";
+        if (self.number == 41)
+          "are free to go.~";
+        print "still owe me ", 41 - self.number, " cent";
+        if (self.number < 40)
+          print "s";
+        ".~";
+      }
+      "~That's not money. I have no need for that.~";
+    Kiss:
+      "The troll puckers up and exposes his horrible yellow teeth in the process. You change your mind.";
+    Talk:
+      print "The troll says, ~You";
+      if (self.number == 41)
+        "'re free to go.~";
+      print " still owe me ", 41 - self.number, " cent";
+      if (self.number <40)
+        print "s";
+      ". If you've got any questions about the terms or conditions, just ask.~";
+  ],
+  before
+  [;
+    Take:
+      "You put your skinny little arms around one of the troll's huge legs and try to pick him up. No, that's not going to work. You need to spend more time in the gym. The troll gives you a strange look. ~What are you doing?~";
+  ],
+  number 0,
+has animate;
+
+!========================================
+! Room 2: Corridor
+!========================================
+Object room02 "Corridor"
+with
+  description "You're in a rather plain, yet functional corridor. Its main purpose is to provide access to the exit to the north. There's also a vault door to the east and a room to the west. The corridor itself continues to the south.",
+  n_to room01,
+  s_to room04,
+  e_to vault_door,
+  w_to room03,
+  before
+  [;
+    Hint:
+      if (room08 hasnt visited && key in nothing)
+        "Ashes to ashes, dust to dust, find the key, if you must.";
+      if (room08 hasnt visited && vault_door has locked)
+        "Use the key, Luke.";
+      if (room08 hasnt visited && vault_door hasnt open)
+        "Open sesame.";
+      if (room08 hasnt visited)
+        "The vault beckons.";
+  ],
+has light;
+
+!----------------------------------------
+! Corridor (floating object)
+!----------------------------------------
+Object "corridor"
+with
+  name 'corridor' 'hall' 'hallway',
+  description "The corridor runs from north to south down the centre of the administration building.",
+  found_in room02 room04,
+has scenery;
+
+!----------------------------------------
+! Vault door (floating object)
+!----------------------------------------
+Object vault_door "vault door"
+with
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'vault' or 'door')
+    {
+      i++;
+      if (nw == 'vault' && location == room08)
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description
+  [;
+    print "It's a massive iron door that's obviously meant to keep intruders out. That means you. It's currently ";
+    if (self has open)
+      "open.";
+    else
+      "closed.";
+  ],
+  door_dir
+  [;
+    if (self in room02)
+      return e_to;
+    else
+      return w_to;
+  ],
+  door_to
+  [;
+    if (self in room02)
+      return room08;
+    else
+      return room02;
+  ],
+  before
+  [;
+    Attack:
+      if (self has open)
+        "The vault door is open, so there's no need to get violent.";
+      else
+        "Clang!";
+    Lock:
+     if (self in room08)
+       "You can only lock it from the outside.";
+  ],
+  with_key key,
+  found_in room02 room08,
+has door lockable locked openable scenery;
+
+!========================================
+! Room 3: Broom Closet
+!========================================
+Object room03 "Broom Closet"
+with
+  description "You're in a broom closet. If the troll at the entryway is any indication, then this is probably where the witches hang out. Fortunately, there are no witches here at the moment. The exit is to the east.",
+  e_to room02,
+  out_to room02,
+  before
+  [;
+    Hint:
+      if (TestScope(broom))
+        "Brooms have other uses apart from riding them to collect the groceries or playing Quidditch.";
+  ],
+has light;
+
+!----------------------------------------
+! Broom closet
+!----------------------------------------
+Object "broom closet" room03
+with
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'broom' or 'closet')
+    {
+      i++;
+      if (nw == 'broom' && TestScope(broom))
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description "This is probably where the witches keep their brooms.",
+  before
+  [;
+    Come:
+      print_ret (string)GAY_OR_SOMETHING;
+  ],
+has scenery;
+
+!----------------------------------------
+! Broom
+!----------------------------------------
+Object broom "broom" room03
+with
+  parse_name
+  [ i;
+    while (NextWord() == 'broom' or 'long-handled' or 'long' or 'handled' or 'nylon' or 'bristle' or 'bristles//p')
+      i++;
+    return i;
+  ],
+  description "It's a long-handled broom with nylon bristles. Even witches need to keep up with the times.",
+  before
+  [;
+    Enter:
+      "Who do you think you are? Broomhilda? Harry Potter?";
+  ],
+has;
+
+!========================================
+! Room 4: Corridor
+!========================================
+Object room04 "Corridor"
+with
+  description "You're in a rather bland and uninteresting corridor. The corridor continues to the north and there are rooms at the end of the corridor to the south, east and west.",
+  n_to room02,
+  s_to room06,
+  e_to room07,
+  w_to room05,
+  before
+  [;
+    Hint:
+      if (quarter hasnt moved)
+        print_ret (string)HINT_GET_COIN;
+  ],
+has light;
+
+!----------------------------------------
+! Quarter (treasure)
+!----------------------------------------
+Object quarter "quarter" room04
+with
+  parse_name
+  [ i;
+    while (NextWord() == 'quarter' or 'twenty-five' or '25' or 'cent' or 'cents//p' or 'silver' or 'coin' or 'coins//p' or 'money//p')
+      i++;
+    return i;
+  ],
+  description "It's a silver coin worth 25 cents.",
+  number 25,
+has scored;
+
+!========================================
+! Room 5: Dust Closet
+!========================================
+Object room05 "Dust Closet"
+with
+  description "You're in a dust closet, so named because of the dust. It would be a good closet to come out of. If you decide to do that, then the exit is to the east.",
+  e_to room04,
+  out_to room04,
+  before
+  [;
+    Hint:
+      if (key in nothing)
+        "This place sure is dusty. It could do with a good clean.";
+      if (key hasnt moved)
+        "The key is the key, but the key to what?";
+  ],
+has light;
+
+!----------------------------------------
+! Dust closet
+!----------------------------------------
+Object "dust closet" room05
+with
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'dust' or 'closet')
+    {
+      i++;
+      if (nw == 'dust' && dust in location)
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description
+  [;
+    print "The dust closet is ";
+    if (dust in location)
+      "dusty. That's probably why it's called a dust closet.";
+    else
+      "no longer dusty now that you've swept it.";
+  ],
+  before
+  [;
+    Come:
+      print_ret (string)GAY_OR_SOMETHING;
+  ],
+has scenery;
+
+!----------------------------------------
+! Dust
+!----------------------------------------
+Object dust "dust" room05
+with
+  article "some",
+  name 'dust',
+  description "You imagine that the dust consists of hairs, dead skin particles, fabric fibres and plain old dirt.",
+  before
+  [;
+    Rub:
+      if (second == nothing && broom in player)
+      {
+        print "(with the broom)^";
+        second = broom;
+      }
+      if (second == nothing)
+        "You'll have to tell me what to ", (address)verb_word, " it with.";
+      if (second ~= broom)
+        "You can't ", (address)verb_word, " the dust with ", (ThatOrThose)second, ".";
+      remove self;
+      move key to location;
+      "You sweep up all the dust and find a key.";
+    Take:
+      "~Achoo!~";
+  ],
+has static;
+
+!----------------------------------------
+! Key
+!----------------------------------------
+Object key "key"
+with
+  name 'key',
+  description "It's a heavy iron key that no doubt opens a heavy iron door.",
+has;
+
+!========================================
+! Room 6: Game Room
+!========================================
+Object room06 "Game Room"
+with
+  description "You're in a game room. You can tell it's a game room because of the heads on the wall. You check to make sure that your head is not there. When you've finished admiring the heads, the exit is to the north.",
+  n_to room04,
+  out_to room04,
+  before
+  [;
+    Hint:
+      if (dime hasnt moved)
+        print_ret (string)HINT_GET_COIN;
+  ],
+has light;
+
+!----------------------------------------
+! Game room
+!----------------------------------------
+Object "game room" room06
+with
+  name 'game' 'room' 'gameroom',
+  description "Did you notice the heads on the wall? Sorry, no computer games.",
+has scenery;
+
+!----------------------------------------
+! Heads on wall
+!----------------------------------------
+Object "heads on wall" room06
+with
+  parse_name
+  [ i;
+    while (NextWord() == 'head' or 'heads//p' or 'on' or 'wall' or 'stuffed' or 'wild' or 'animal' or 'animals//p' or 'rubber' or 'plastic' or 'artificial' or 'fur')
+      i++;
+    return i;
+  ],
+  description "From a distance, the heads look like the stuffed heads of wild animals. On closer inspection, you see that they're all made from rubber and plastic and artificial fur. Whew! That's a relief.",
+  before
+  [;
+    Pull, Push, Take, Turn:
+      "This is no time to be thinking of masks for Halloween. Apart from which, the heads are all firmly attached to the wall.";
+  ],
+has pluralname scenery;
+
+!----------------------------------------
+! Dime (treasure)
+!----------------------------------------
+Object dime "dime" room06
+with
+  parse_name
+  [ i;
+    while (NextWord() == 'dime' or 'ten' or '10' or 'cent' or 'cents//p' or 'silver' or 'coin' or 'coins//p' or 'money//p')
+      i++;
+    return i;
+  ],
+  description "It's a silver coin worth 10 cents.",
+  number 10,
+has scored;
+
+!========================================
+! Room 7: Den
+!========================================
+Object room07 "Den"
+with
+  description "You're in someone's den, maybe the troll's. It's rather dim and untidy compared to the other parts of the administration building that you've seen. When you've finished looking around, the exit is to the west.",
+  w_to room04,
+  out_to room04,
+  before
+  [;
+    Hint:
+      if (nickel hasnt moved)
+        print_ret (string)HINT_GET_COIN;
+  ],
+has light;
+
+!----------------------------------------
+! Den
+!----------------------------------------
+Object "den" room07
+with
+  name 'den',
+  description "When you stop and think about it, this could be a lion's den. In that case, you'd better get out of here quick smart.",
+has scenery;
+
+!----------------------------------------
+! Nickel (treasure)
+!----------------------------------------
+Object nickel "nickel" room07
+with
+  parse_name
+  [ i;
+    while (NextWord() == 'nickel' or 'five' or '5//' or 'cent' or 'cents//p' or 'silver' or 'coin' or 'coins//p' or 'money//p')
+      i++;
+    return i;
+  ],
+  description "It's a silver coin worth 5 cents.",
+  number 5,
+has scored;
+
+!========================================
+! Room 8: Vault
+!========================================
+Object room08 "Vault"
+with
+  description "You're inside the vault. How disappointing! You were expecting riches beyond your wildest dreams, but it's virtually empty. The door leading out of the vault is to the west.",
+  w_to vault_door,
+  out_to vault_door,
+  before
+  [;
+    Hint:
+      if (penny hasnt moved)
+        print_ret (string)HINT_GET_COIN;
+  ],
+has light;
+
+!----------------------------------------
+! Vault
+!----------------------------------------
+Object "vault" room08
+with
+  name 'vault',
+  description "Either the vault has been robbed or the money has been taken to the bank. Clearly, the day's carnival earnings have not yet made their way to the vault.",
+has scenery;
+
+!----------------------------------------
+! Penny (treasure)
+!----------------------------------------
+Object penny "penny" room08
+with
+  parse_name
+  [ i;
+    while (NextWord() == 'penny' or 'one' or '1//' or 'cent' or 'cents//p' or 'copper' or 'coin' or 'coins//p' or 'money//p')
+      i++;
+    return i;
+  ],
+  description "It's a copper coin worth one cent.",
+  number 1,
+has scored;
+
+!========================================
+! Printing rules
+!========================================
+[ consultWord word i;
+  for (i=0:i<WordLength(word):i++)
+    print (char)LowerCase(WordAddress(word)->i);
+];
+
+[ DoesntOrDont obj;
+  if (obj has pluralname)
+    print "don't";
+  else
+    print "doesn't";
+];
+
+[ firstConsultWord word i;
+  for (i=0:i<WordLength(word):i++)
+    if (i == 0)
+      print (char)UpperCase(WordAddress(word)->i);
+    else
+      print (char)LowerCase(WordAddress(word)->i);
+];
+
+!========================================
+! Other routines
+!========================================
+[ LowerCase c; ! for ZSCII matching ISO 8859-1
+  switch (c)
+  {
+    'A' to 'Z': c = c + 32;
+    202, 204, 212, 214, 221: c--;
+    217, 218: c = c - 2;
+    158 to 160, 167, 168, 208 to 210: c = c - 3;
+    186 to 190, 196 to 200: c = c - 5 ;
+    175 to 180: c = c - 6;
+  }
+  return c;
+];
+
+[ UpperCase c; ! for ZSCII matching ISO 8859-1
+  switch (c)
+  {
+    'a' to 'z': c = c - 32;
+    201, 203, 211, 213, 220: c++;
+    215, 216: c = c + 2;
+    155 to 157, 164, 165, 205 to 207: c = c + 3;
+    181 to 185, 191 to 195: c = c + 5 ;
+    169 to 174: c = c + 6;
+  }
+  return c;
+];
+
+!========================================
+! Grammar
+!========================================
+Extend only 'clear' replace
+  * noun -> Rub;
+
+Extend 'give' replace
+  * multiheld 'to' creature -> Give
+  * creature multiheld -> Give reverse
+  * 'over' multiheld 'to' creature -> Give;
+
+Extend 'lock' first
+  * noun -> Lock;
+
+Extend 'look'
+  * 'into' noun -> Search
+  * 'under' noun -> LookUnder;
+
+Extend only 'pay'
+  * creature -> Pay
+  * creature 'with' multiheld -> Give reverse;
+
+Extend 'pry' replace
+  * noun -> Pry
+  * noun 'with' held -> Pry
+  * 'apart'/'open' noun 'with' held -> Pry
+  * noun 'apart'/'open' 'with' held -> Pry;
+
+Extend 'read' first
+  * noun -> Read;
+
+Extend 'rub'
+  * noun 'with' noun -> Rub;
+
+Extend only 'say' first
+  * topic -> Say;
+
+Extend only 'speak' replace
+  * -> Talk
+  * creature -> Talk
+  * noun -> Talk
+  * 'to'/'with' creature -> Talk
+  * 'to'/'with' noun -> Talk
+  * 'to'/'with' creature 'about' topic -> Ask
+  * 'to'/'with' noun 'about' topic -> Ask;
+
+Extend 'unlock' first
+  * noun -> Unlock;
+
+Verb meta 'about' 'info'
+  * -> About;
+
+Verb 'come'
+  * 'out' 'of' noun -> Come;
+
+Verb meta 'credits'
+  * -> Credits;
+
+Verb meta 'help' 'instructions'
+  * -> Help;
+
+Verb 'hint' 'clue'
+  * -> Hint;
+
+Verb 'inspect' = 'examine';
+
+Verb 'kick' = 'attack';
+
+Verb 'mount' 'ride' = 'enter';
+
+Verb 'talk' 'babble' 'chat' 'communicate' 'converse' 'gab' 'gossip'
+  * -> Talk
+  * creature -> Talk
+  * noun -> Talk
+  * 'to'/'with' creature -> Talk
+  * 'to'/'with' noun -> Talk
+  * 'to'/'with' creature 'about' topic -> Ask
+  * 'to'/'with' noun 'about' topic -> Ask;
+
+Verb 'thank'
+  * creature -> Thank;
+
+Verb 'use'
+  * -> Use
+  * noun -> Use;
+
+Verb 'xyzzy' 'plover' 'plugh' 'yoho'
+  * -> MagicWord;
+
+!========================================
+! Actions
+!========================================
+[ AboutSub;
+  print "This game was originally known as 'Cave of the Troll'. It was written in Turbo BASIC for IBM-compatible PCs by John H Doolittle circa 1989 and used in his 'Scientific Thinking in Psychology' classes when he was a professor of psychology at California State University, Sacramento.^^It was ported to ZBasic by Eric Thornton and published by Critical Thinking Press as game 1 in the 'Adventures in Danger!' trilogy. This was released for the Apple II and Macintosh in 1992.^^John continued to update the game until 1996 and released the Turbo BASIC source code in 2023. This was ported to Inform 6 by Garry Francis using the PunyInform library. It was then enhanced in collaboration with the original author to become 'Escape from the Troll's Cave'.^^";
+  <<Credits>>;
+];
+
+[ ComeSub;
+  if (ObjectIsUntouchable(noun))
+    return;
+  if (noun has scenery && parent(noun) == location)
+    "Just use simple directions like N, S, E or W.";
+  if (player in noun)
+    <<Exit noun>>;
+  "You're not in ", (the)noun, ".";
+];
+
+[ CreditsSub;
+  "Original concept by John H Doolittle.^Game design and coding by Garry Francis.^Play testing by Audrey Lee, Jade J Aincioa, John H Doolittle and Timur Ozturk.";
+];
+
+[ GoSub _prop;
+  if (selected_direction == ne_to or nw_to or se_to or sw_to)
+    "There are no diagonal directions in this game.";
+  _prop = selected_direction;
+#Iftrue RUNTIME_ERRORS > RTE_MINIMUM;
+  if (_prop == 0)
+    return _RunTimeError(ERR_INVALID_DIR_PROP);
+#Endif;
+  return GoDir(_prop);
+];
+
+[ HelpSub;
+  print "Tell me what to do using simple commands starting with a verb.^^Use LOOK (or L) to refresh the location description. Identify all the objects in the description and EXAMINE (or X) each one. Read responses carefully for hints.^^Use compass directions (N, S, E and W) to move around. Draw a map as you go.^^Use GET or TAKE to take objects and DROP to drop them again. Use INVENTORY (or I) to see what you're carrying.^^Use AGAIN (or G) to repeat the last command.^^";
+#Ifv5;
+  print "Use UNDO to undo the last command if you make a mistake.^^";
+#Endif;
+  "Use SCORE to get your current score and number of turns taken.^^Use SAVE to save the game and RESTORE to restore it again.^^There are over 100 verbs that you can use, so if something doesn't work, try a different verb or a different way of doing things. Use HINT if you get stuck.^^For full instructions, see the game's home page at https://drdooriddle.itch.io/escape-from-the-trolls-cave/.";
+];
+
+[ HintSub;
+  "There's nothing else to do here. If you've run out of ideas, make sure you examine everything you find and draw a map.";
+];
+
+[ LockSub k;
+  if (ObjectIsUntouchable(noun))
+    return;
+  if (noun hasnt lockable)
+  {
+    PrintMsg(MSG_LOCK_NOT_A_LOCK, 'lock');
+    rtrue;
+  }
+  if (noun has locked)
+  {
+    PrintMsg(MSG_LOCK_ALREADY_LOCKED);
+    rtrue;
+  }
+  if (noun has open)
+  {
+    PrintMsg(MSG_LOCK_CLOSE_FIRST);
+    rtrue;
+  }
+  k = RunRoutines(noun, with_key);
+  if (k == nothing)
+    "You can't see how to lock ", (ItOrThem)noun, ".";
+  if (second == nothing && k ~= nothing && k in player)
+  {
+    second = k;
+    print "(with ", (the)second, ")^";
+  }
+  if (second == nothing)
+    "You don't have the key.";
+  if (second ~= k)
+  {
+    PrintMsg(MSG_LOCK_KEY_DOESNT_FIT);
+    rtrue;
+  }
+  give noun locked;
+  run_after_routines_msg = MSG_LOCK_DEFAULT;
+  run_after_routines_arg_1 = 'lock';
+];
+
+[ LookUnderSub;
+  if (location == thedark)
+    "But it's dark.";
+  "You find nothing of interest.";
+];
+
+[ MagicWordSub;
+  print "The troll ";
+  if (location ~= room01)
+    print "wanders in and ";
+  print "says, ~Hey! Magic words are not permitted in here. If you do that again, I may have to increase the toll.~";
+  if (location ~= room01)
+    print " With that, he wanders off back to where he came from.";
+  "";
+];
+
+[ PaySub;
+  if (ObjectIsUntouchable(noun))
+    return;
+  if (second == nothing)
+    "You'll have to tell me what to pay ", (the) noun, " with.";
+  <<Give noun second>>;
+];
+
+[ PrySub;
+  if (ObjectIsUntouchable(noun))
+    return;
+  if (AfterRoutines() == 1)
+    rtrue;
+  if (keep_silent == 1)
+    rtrue;
+  "You can't pry ", (ThatOrThose)noun, " apart.";
+];
+
+[ ReadSub;
+  if (ObjectIsUntouchable(noun, true))
+    "I suppose you read tea leaves, too.";
+  "There's nothing legible on ", (ThatOrThose)noun, ".";
+];
+
+[ SaySub i;
+  if (consult_words == 0)
+    "You have nothing to say.";
+  print "~";
+  i = consult_from;
+  print (firstConsultWord)i++;
+  while (i < consult_from + consult_words)
+    print " ", (consultWord)i++;
+  print ".~^^";
+  if (AfterRoutines())
+    return;
+  wn = consult_from;
+  if (consult_words == 1 && NextWord() == 'xyzzy' or 'plover' or 'plugh' or 'yoho')
+    <<MagicWord>>;
+  "Nothing happens.";
+];
+
+[ TalkSub;
+  if (noun == nothing)
+    "You start talking to no one in particular.";
+  if (noun == player)
+    "You start talking to yourself, but it's a one-sided conversation.";
+  if (RunLife(noun, ##Talk))
+    rtrue;
+  print_ret (The)noun, " ", (IsOrAre)noun, " not very talkative.";
+];
+
+[ ThankSub;
+  if (noun == player)
+    "You start thanking yourself, then wonder what it is that you've done that's so worthy of thanking.";
+  if (RunLife(noun, ##Thank))
+    rtrue;
+  if (noun has neuter)
+    print_ret (The)noun, " gives you a strange look.";
+  print_ret (The)noun, " says, ~You're welcome.~";
+];
+
+[ UnlockSub k;
+  if (ObjectIsUntouchable(noun))
+    return;
+  if (noun hasnt lockable)
+  {
+    PrintMsg(MSG_UNLOCK_NOT_A_LOCK, 'unlock');
+    rtrue;
+  }
+  if (noun hasnt locked)
+  {
+    PrintMsg(MSG_UNLOCK_ALREADY_UNLOCKED, 'unlock');
+    rtrue;
+  }
+  k = RunRoutines(noun, with_key);
+  if (k == nothing)
+    "You can't see how to unlock ", (ItOrThem)noun, ".";
+  if (second == nothing && k ~= nothing && k in player)
+  {
+    second = k;
+    print "(with ", (the)second, ")^";
+  }
+  if (second == nothing)
+    "You don't have the key.";
+  if (second ~= k)
+  {
+    PrintMsg(MSG_UNLOCK_KEY_DOESNT_FIT);
+    rtrue;
+  }
+  give noun ~locked;
+  run_after_routines_msg = MSG_UNLOCK_DEFAULT;
+  run_after_routines_arg_1 = 'unlock';
+];
+
+[ UseSub;
+  if (ObjectIsUntouchable(noun))
+    return;
+  "You'll have to be more explicit than that.";
+];
+
+End;

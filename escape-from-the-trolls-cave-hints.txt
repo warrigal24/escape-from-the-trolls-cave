@@ -1,0 +1,125 @@
+Escape from the Troll's Cave - Coded Hints
+
+Read the questions in the area where you are stuck. Each question is followed by a list of numbers. Look up the numbers in the dictionary at the end. Convert the numbers to words to find a clue or solution.
+
+
+Inside Troll's Cave
+-------------------
+Can't leave troll's cave?
+  16 3
+
+Can't find enough coins to pay troll?
+  12 18
+
+Still can't find enough coins to pay troll?
+  13 39 31 2 22 19 14 22 10 22 7
+
+Can't pay troll?
+  34 5 39 8
+
+
+Corridor (north)
+----------------
+Can't open vault door?
+  25 32
+
+Can't find key?
+  36 38 24 28
+
+Still can't open vault door?
+  6 29 11 32
+
+
+Broom Closet
+------------
+Don't know what to do here?
+  17 30 21 28
+
+Still don't know what to do here?
+  40 1
+
+Don't know what to do with broom?
+  27 1
+
+Still don't know what to do with broom?
+  15 24 11 23
+
+
+Corridor (south)
+----------------
+Don't know what to do here?
+  40 35
+
+
+Dust Closet
+-----------
+Don't know what to do here?
+  23 33 9 26
+
+Still don't know what to do here?
+  20 9 4 39 37
+
+Still don't know what to do here?
+  15 24 11 1
+
+
+Game Room
+---------
+Don't know what to do here?
+  40 35
+
+
+Den
+---
+Don't know what to do here?
+  40 35
+
+
+Vault
+-----
+Don't know what to do here?
+  40 35
+
+
+============================================================
+
+ 1. BROOM
+ 2. CORRIDOR
+ 3. SIGN
+ 4. NEXT
+ 5. COINS
+ 6. UNLOCK
+ 7. VAULT
+ 8. TROLL
+ 9. IS
+10. DEN
+11. WITH
+12. EXPLORE
+13. GO
+14. ROOM
+15. SWEEP
+16. READ
+17. COME
+18. BUILDING
+19. GAME
+20. CLEANLINESS
+21. OF
+22. ,
+23. IT
+24. DUST
+25. FIND
+26. DUSTY
+27. RIDE
+28. CLOSET
+29. DOOR
+30. OUT
+31. SOUTH
+32. KEY
+33. SURE
+34. GIVE
+35. COIN
+36. LOOK
+37. GODLINESS
+38. IN
+39. TO
+40. GET
